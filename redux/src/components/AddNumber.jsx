@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 export default class AddNumber extends Component {
-        // redux의 기능을 도려내서 부품으로서 사용되게 만듦
+        // redux의 기능을 도려내서 부품으로서 사용되게 만듦!
 
     state ={size : 1}
     render() {
