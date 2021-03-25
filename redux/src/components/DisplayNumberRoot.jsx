@@ -9,7 +9,7 @@ export default class DisplayNumberRoot extends Component {
             Display Number Root!
           </h1>
   
-          <DisplayNumber ></DisplayNumber>
+          <DisplayNumber unit=" kg"></DisplayNumber>
         </div>
       )
   
