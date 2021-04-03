@@ -1,10 +1,9 @@
 # React
 
-Youtube 보고 React 따라하기
+1. basic
 
-- React
-
-1. Movie App
+- Create Web Service
+- CRA(create-react-app)
 
 2. Redux
 
