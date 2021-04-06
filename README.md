@@ -1,9 +1,18 @@
 # React
 
+reference site = [
+https://developer.mozilla.org/ko/,
+
+]
+
 1. basic
 
-- Create Web Service
-- CRA(create-react-app)
+- JSX
+- State
+- Props
+- Class Components
+- Data Fetching
+- Routing
 
 2. Redux
 
