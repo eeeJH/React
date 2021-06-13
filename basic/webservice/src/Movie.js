@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 import './Movie.css';
 
+// npm install --save react-lines-ellipsis
+import LinesEllpsis from 'react-lines-ellipsis';
+
 // class Movie extends Component {
 
 //     static props = {
@@ -36,12 +39,18 @@ function Movie({title, poster, genres, synopsis }) {
                     {title}
                 </h1>
 
-                <div className='Movie__Genr'>
+                <div className='Movie__Genres'>
                     {genres.map((genres, index) => <MovieGenre genres={genres} key={index}/>)}
                 </div>
 
                 <p className='Movie__Syno'>
-                    {synopsis}
+                    <LinesEllpsis
+                        text={synopsis}
+                        maxLine='3'
+                        ellipsis='...'
+                        trimRight
+                        basedOn='letters'
+                    />
                 </p>
             </div>
             
@@ -75,7 +84,7 @@ function MoviePoster({ poster, alt }) {
 function MovieGenre({ genres}) {
             
     return (
-        <span className='Movie__Genr'>
+        <span className='Movie__Genre'>
             {genres}
         </span>
     );
